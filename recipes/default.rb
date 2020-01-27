@@ -39,3 +39,13 @@ execute 'java' do
   command 'sudo apt-get install default-jre -y'
   action :run
 end
+
+directory '/home/ubuntu/Downloads' do
+  action :create
+  mode '0777'
+end
+
+file '/home/ubuntu/Downloads/ItJobsWatchTop30.csv' do
+  action :create
+  mode '0777'
+end
