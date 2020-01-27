@@ -39,11 +39,3 @@ execute 'java' do
   command 'sudo apt-get install default-jre -y'
   action :run
 end
-
-file '/home/ubuntu/app/requirements.txt' do
-  action :delete
-end
-
-directory '/home/ubuntu/app/' do
-  action :delete
-end
