@@ -40,12 +40,12 @@ execute 'java' do
   action :run
 end
 
-directory '/home/ubuntu/Downloads' do
+directory '/home/vagrant/Downloads' do
   action :create
   mode '0777'
 end
 
-file '/home/ubuntu/Downloads/ItJobsWatchTop30.csv' do
+file '/home/vagrant/Downloads/ItJobsWatchTop30.csv' do
   action :create
   mode '0777'
 end
